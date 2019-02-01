@@ -1,10 +1,29 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <title>Калькулятор коммерческого предложения</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
 </head>
 <body>
-<p th:text="'Hello, ' + ${name} + '!'" />
+<div id="login">
+<h2><span class="fontawesome"></span>Калькулятор коммерческого предложения</h2>
+<form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+    <fieldset>
+    <p>Наименование компани<input type="text" th:field="*{companyName}" /></p>
+    <p>Территория: <input type="text" th:field="*{territoryName}" /></p>
+    <p>Отрасль: <input type="text" th:field="*{productArea}" /></p>
+    <p>Торговая команда: <input type="text" th:field="*{saleTeam}" /></p>
+    <p>Сети: <input type="text" th:field="*{networks}" /></p>
+    <p>Опт: <input type="text" th:field="*{wholesales}" /></p>
+    <p>Розница: <input type="text" th:field="*{retials}" /></p>
+    <p><input type="submit" value="Рассчитать прибыль" /></p>
+    </fieldset>
+</form>
+</div>
 </body>
 </html>
