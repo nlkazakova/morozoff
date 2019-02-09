@@ -8,25 +8,29 @@ public class ClientProfile {
     private int saleTeam = 30;
     private int networks = 50;
     private int wholesales = 150;
-    private int retials = 1500;
-    private boolean isSelfDelivery = true;
+    private int retails = 1500;
+    private String delivery;
+    private int interest;
+    private double price;
+    private int tma;
+    private int bonus;
+    private int income;
+
 
     public String getCompanyName() {
         return companyName;
     }
 
-    public ClientProfile withCompanyName(String companyName) {
+    public void setCompanyName(String companyName) {
         this.companyName = companyName;
-        return this;
     }
 
     public String getTerritoryName() {
         return territoryName;
     }
 
-    public ClientProfile withTerritoryName(String territoryName) {
+    public void setTerritoryName(String territoryName) {
         this.territoryName = territoryName;
-        return this;
     }
 
     public String getProductArea() {
@@ -42,44 +46,85 @@ public class ClientProfile {
         return saleTeam;
     }
 
-    public ClientProfile withSaleTeam(int saleTeam) {
+    public void setSaleTeam(int saleTeam) {
         this.saleTeam = saleTeam;
-        return this;
     }
 
     public int getNetworks() {
         return networks;
     }
 
-    public ClientProfile withNetworks(int networks) {
+    public void setNetworks(int networks) {
         this.networks = networks;
-        return this;
     }
 
     public int getWholesales() {
         return wholesales;
     }
 
-    public ClientProfile withWholesales(int wholesales) {
+    public void setWholesales(int wholesales) {
         this.wholesales = wholesales;
+    }
+
+    public int getRetails() {
+        return retails;
+    }
+
+    public void setRetails(int retails) {
+        this.retails = retails;
+    }
+
+    public String getDelivery() {
+        return delivery;
+    }
+
+    public void setDelivery(String delivery) {
+        this.delivery = delivery;
+    }
+
+    public int getInterest() {
+        return interest;
+    }
+
+    public ClientProfile withInterest(int interest) {
+        this.interest = interest;
         return this;
     }
 
-    public int getRetials() {
-        return retials;
+    public double getPrice() {
+        return price;
     }
 
-    public ClientProfile withRetials(int retials) {
-        this.retials = retials;
+    public ClientProfile withPrice(double price) {
+        this.price = price;
         return this;
     }
 
-    public boolean isSelfDelivery() {
-        return isSelfDelivery;
+    public int getTma() {
+        return tma;
     }
 
-    public ClientProfile setSelfDelivery(boolean selfDelivery) {
-        isSelfDelivery = selfDelivery;
+    public ClientProfile withTma(int tma) {
+        this.tma = tma;
         return this;
     }
+
+    public int getBonus() {
+        return bonus;
+    }
+
+    public ClientProfile withBonus(int bonus) {
+        this.bonus = bonus;
+        return this;
+    }
+
+    public int getIncome() {
+        return income;
+    }
+
+    public ClientProfile withIncome(int income) {
+        this.income = income;
+        return this;
+    }
+
 }

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<body>
+<div id="login" th:fragment="calc">
+    <h2><span class="fontawesome"></span>Планируемая прибыль</h2>
+    <fieldset>
+        <p>ТМА: <input type="text" th:field="${clientProfile.tma}" /></p>
+        <p>Премии: <input type="text" th:field="${clientProfile.bonus}" /></p>
+        <p>Прибыль: <input type="text" th:field="${clientProfile.income}" /></p>
+    </fieldset>
+</div>
+</body>
+</html>

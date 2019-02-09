@@ -29,12 +29,12 @@ input {
 
 /* ---------- LOGIN ---------- */
 
-#login {
+#login, #calc {
 	margin: 120px auto;
 	width: 400px;
 }
 
-#login h2 {
+#login h2, #calc h2 {
 	background-color: #f95252;
 	-webkit-border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
@@ -44,11 +44,11 @@ input {
 	padding: 20px 26px;
 }
 
-#login h2 span[class*="fontawesome-"] {
+#login h2 span[class*="fontawesome-"], #calc h2 span[class*="fontawesome-"] {
 	margin-right: 14px;
 }
 
-#login fieldset {
+#login fieldset, #calc fieldset {
 	background-color: #fff;
 	-webkit-border-radius: 0 0 20px 20px;
 	-moz-border-radius: 0 0 20px 20px;
@@ -56,38 +56,29 @@ input {
 	padding: 20px 26px;
 }
 
-#login fieldset p {
+#login fieldset p, #calc fieldset p {
 	color: #777;
 	margin-bottom: 14px;
 }
 
-#login fieldset p:last-child {
+#login fieldset p:last-child, #calc fieldset p:last-child {
 	margin-bottom: 0;
 }
 
-#login fieldset input {
+#login fieldset input, #calc fieldset input{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 
-#login fieldset input[type="email"], #login fieldset input[type="password"], #login fieldset input[type="text"] {
+#login fieldset input[type="email"], #login fieldset input[type="password"], #login fieldset input[type="text"], #calc fieldset input[type="text"] {
 	background-color: #eee;
 	color: #777;
 	padding: 4px 10px;
 	width: 328px;
 }
 
-input[type=checkbox] {
-	margin-left: 20px;
-	margin-top: 30px;
-}
-.check {
-	margin-left: 3px;
-	font-size: 11px;
-	color: #444;
-	text-shadow: 0 1px 0 #fff;
-}
+
 
 #login fieldset input[type="submit"], #login fieldset input[type="reset"] {
 	background-color: #33cc77;
